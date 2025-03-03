@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column; /* Susun elemen ke bawah */
+  align-items: center; /* Pusatkan elemen secara horizontal */
+  justify-content: center; /* Pusatkan elemen secara vertikal */
+}
+
+.image-icon {
+  margin: 0;
+}
+.image-icon img {
+  width: 250px;
+  height: 250px;
+}
+
+.angka-random h1 {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+.random-angka p {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 34px;
+}
+.buttom-random-angka {
+  display: flex;
+  justify-content: center;
+}
+.buttom-random-angka button {
+  width: 250px;
+  height: 30px;
+  border-radius: 12px;
+  font-size: 12px;
+  border: 2px solid black; /* Mengubah warna border menjadi merah */
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttom-random-angka button:hover {
+  border-color: grey; /* Warna border berubah saat di-hover */
 }
